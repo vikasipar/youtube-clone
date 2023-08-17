@@ -2,17 +2,20 @@ import { useState } from "react";
 import axios from "axios";
 import SearchedVideos from './SearchedVideos';
 import DemoVideos from './DemoVideos';
+import Loader from './Loader';
 
 function HomePage() {
 
     const [searchTerm, setSearchTerm] = useState('');
     const[videos, setVideos] = useState([]);
     const[selectedVideo, setSelectedVideo] = useState('');
+    const [isLoading, setIsLoading] = useState(false);
 
     const apikey = import.meta.env.VITE_API_KEY;
 
     const submitHandler = async(event) => {
         event.preventDefault();
+        setIsLoading(true);
 
         try{
             const response = await axios.get('https://www.googleapis.com/youtube/v3/search', {
@@ -29,6 +32,8 @@ function HomePage() {
         }
         catch(error){
             console.error("Fetch error: ",error);
+        }finally{
+            setIsLoading(false);
         }
     }
 
@@ -62,7 +67,14 @@ function HomePage() {
         </div>
         </div>
         <div>
-            {selectedVideo? videos.map((v) => <SearchedVideos video={v} key={v.id.videoId} id={v.id.videoId} />) : <DemoVideos />}
+            {isLoading?(
+                <Loader />
+            ): selectedVideo ? (
+                videos.map((v) => <SearchedVideos video={v} key={v.id.videoId} id={v.id.videoId} />)
+            ):(
+                <DemoVideos />
+            )
+            }
         </div>
     </div>
   )
