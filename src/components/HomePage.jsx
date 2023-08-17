@@ -3,6 +3,7 @@ import axios from "axios";
 import SearchedVideos from './SearchedVideos';
 import DemoVideos from './DemoVideos';
 import Loader from './Loader';
+import {Link} from 'react-router-dom';
 
 function HomePage() {
 
@@ -44,7 +45,9 @@ function HomePage() {
   return (
     <div className="">
     <div className="flex flex-col md:flex-row md:items-center justify-between m-0">
-        <img src="https://download.logo.wine/logo/YouTube/YouTube-Logo.wine.png" alt="youtube" className="w-36 md:w-48" />
+        <Link to={'/'} >
+            <img src="https://download.logo.wine/logo/YouTube/YouTube-Logo.wine.png" alt="youtube" className="w-36 md:w-48" />
+        </Link>
         <form onSubmit={submitHandler} className="flex justify-center">
             <input
                 type="text" 
@@ -70,7 +73,8 @@ function HomePage() {
             {isLoading?(
                 <Loader />
             ): selectedVideo ? (
-                videos.map((v) => <SearchedVideos video={v} key={v.id.videoId} id={v.id.videoId} />)
+                videos.map((v) => <SearchedVideos video={v} key={v.id.videoId} id={v.id.videoId} />
+                )
             ):(
                 <DemoVideos />
             )
