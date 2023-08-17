@@ -18,7 +18,7 @@ function HomePage() {
             const response = await axios.get('https://www.googleapis.com/youtube/v3/search', {
                 params: {
                    part: 'snippet',
-                   maxResults: 5,
+                   maxResults: 20,
                     key: apikey,
                     q: searchTerm,
                   }

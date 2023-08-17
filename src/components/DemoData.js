@@ -65,13 +65,6 @@ export const data = [
       "Build and Deploy a Full Stack MERN Next.js 13 Threads App | React, Next JS, TypeScript, MongoDB",
     channel: "JavaScript Mastery",
   },
-  // {
-  //   id: "F1dOWDfQfNA",
-  //   thumbnail: "https://i.ytimg.com/vi/F1dOWDfQfNA/mqdefault.jpg",
-  //   title:
-  //     "How I cracked Google during Recession? SWE-III/L4 | Tier 3 to Google",
-  //   channel: "Riddhi Dutta",
-  // },
   {
     id: "t9fP_b8Ebow",
     thumbnail: "https://i.ytimg.com/vi/t9fP_b8Ebow/mqdefault.jpg",
