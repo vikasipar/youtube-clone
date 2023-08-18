@@ -1,8 +1,13 @@
-# React + Vite
+### Youtube Clone (React | Tailwind CSS | Youtube Data API)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#### Home Page:
 
-Currently, two official plugins are available:
+![youtube home](https://github.com/vikasipar/youtube-clone/assets/98696526/039bc3cf-62eb-4981-8703-73a3986acc6a)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### Search Videos:
+
+![youtube search](https://github.com/vikasipar/youtube-clone/assets/98696526/790d3f52-147c-4343-a596-e4d41aa02c03)
+
+#### Watch Videos:
+
+![youtube watch](https://github.com/vikasipar/youtube-clone/assets/98696526/9cf4cd68-afb3-4865-8d65-14983a3b0227)
