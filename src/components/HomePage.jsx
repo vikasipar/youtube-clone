@@ -22,7 +22,7 @@ function HomePage() {
             const response = await axios.get('https://www.googleapis.com/youtube/v3/search', {
                 params: {
                    part: 'snippet',
-                   maxResults: 20,
+                   maxResults: 5,
                     key: apikey,
                     q: searchTerm,
                   }
@@ -43,7 +43,7 @@ function HomePage() {
     }
 
   return (
-    <div className="">
+    <div>
     <div className="flex flex-col md:flex-row md:items-center justify-between m-0">
         <Link to={'/'} >
             <img src="https://download.logo.wine/logo/YouTube/YouTube-Logo.wine.png" alt="youtube" className="w-36 md:w-48" />

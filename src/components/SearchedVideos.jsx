@@ -28,7 +28,7 @@ function SearchedVideos({ video, id }) {
 
   return (
     <div className="md:mx-14">
-    <div className="mx-2 mt-7 md:mx-9">
+    <div className="mx-2 mt-1 md:mt-7 md:mx-9">
             {
                 videoSrc? (
                 <Link key={videoId} to={`/watch/${videoId}`} className="mx-9 md:mx-9 md:my-9 md:flex md:space-x-5 hover:cursor-pointer">
