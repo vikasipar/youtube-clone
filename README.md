@@ -1,5 +1,5 @@
 # <img src="https://cdn-icons-png.flaticon.com/512/174/174883.png" width="50"> &nbsp;&nbsp; Youtube Clone
-Live Site: 👉 [click here](https://youtube-clone.vikasipar.vercel.app/)
+Live Site: 👉 [click here](https://myyoutubeclone.vercel.app/)
 
 ### Overview
 This project is a YouTube clone, where I led frontend development and API integration using React.js and Tailwind CSS. The application features a seamlessly integrated video player for smooth YouTube video streaming, a user-friendly search bar, and ensures responsiveness for diverse screen sizes.
